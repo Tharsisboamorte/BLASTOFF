@@ -1,21 +1,14 @@
-# numero = input("Insira os números que desejar separados pela barra de espaço: "
-# )
-# numeros = numero.split()
-# pares = []
-# for i in range(len(numeros)):
-#     numeros[i] = int(numeros[i])
+print("Temos uma lista pronta com números pares e impares, todos randomizados, e este programa vai te informar de todos os números pares")
+import random
+randomlist = []
+for i in range(0,10):
+    n = random.randint(1,1000)
+    randomlist.append(n)
+print("Esta é a lista em sua totalidade: ", randomlist)
+pares = []
+for i in randomlist:
+    if i % 2 == 0:
+        pares.append(i)
+print("Estes sãos números pares da lista: ", pares)
 
-# if (numeros[i] % 2 == 0):
-#     pares.append()
-# for par in pares:
-#     print("Estes sãos números pares da lista: ", pares)
 
-lista1 = []
-lista2 = []
-for i in range(len(lista1)):
-    lista1[i] = int(lista1[i])
-for valor in lista1:
-    if valor % 2 == 0:
-        lista2.append(valor)
-
-print(lista2)
